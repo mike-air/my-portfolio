@@ -1,0 +1,12 @@
+.bg-img {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 1.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background-size: cover;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
