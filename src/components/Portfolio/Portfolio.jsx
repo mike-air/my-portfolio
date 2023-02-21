@@ -17,7 +17,7 @@ const Portfolio = () => {
                 className="portfolio-card"
               >
                 <img
-                  src="assets/imgs/resthut.png"
+                  src="assets/imgs/resthut.PNG"
                   className="portfolio-card-img"
                   alt="resthut.netlify.app"
                 />
