@@ -2,15 +2,15 @@ import axios from "axios";
 import fileDownload from "js-file-download";
 
 const About = () => {
-  const downloadCV = async () => {
-    axios({
-      url: "http://localhost:5000/downloadPDF",
-      method: "GET",
-      responseType: "blob", // Important
-    }).then((response) => {
-      fileDownload(response.data, "resume.pdf");
-    });
-  };
+  // const downloadCV = async () => {
+  //   axios({
+  //     url: "http://localhost:5000/downloadPDF",
+  //     method: "GET",
+  //     responseType: "blob", // Important
+  //   }).then((response) => {
+  //     fileDownload(response.data, "resume.pdf");
+  //   });
+  // };
   return (
     <div>
       {" "}
@@ -42,13 +42,14 @@ const About = () => {
                 . Comfortable working in a fast-paced environment and able to
                 adapt to new technologies quickly <br />
               </p>
-
-              <button
-                onClick={() => downloadCV()}
-                className="btn-rounded btn btn-outline-primary mt-4"
-              >
-                Download CV
-              </button>
+              <a href="./../../portofolio.pdf" target="_blank" download>
+                <button
+                  // onClick={() => downloadCV()}
+                  className="btn-rounded btn btn-outline-primary mt-4"
+                >
+                  Download CV
+                </button>
+              </a>
             </div>
           </div>
           {/* end of about wrapper */}
